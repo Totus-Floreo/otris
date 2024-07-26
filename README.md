@@ -11,3 +11,5 @@ otris is pretty logger, extension for the slog library, developed as part of the
 05:26:24 Fri 26 Jul 2024 | WARN | High memory usage detected | 85.7 | Cache | 05:26:24 Fri 26 Jul 2024 | Why do Java developers wear glasses? Because they can’t C#.
 05:26:24 Fri 26 Jul 2024 | ERROR | Unexpected server shutdown | 48 | MainServer | 05:26:24 Fri 26 Jul 2024 | To understand recursion, you must first understand recursion.
 ```
+
+![img.png](img/img.png)
