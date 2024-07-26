@@ -12,7 +12,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Open-Streaming-Solutions/otris/internal/slog/buffer"
+	"github.com/Totus-Floreo/otris/internal/slog/buffer"
 	"log/slog"
 	"reflect"
 	"runtime"

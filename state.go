@@ -8,7 +8,7 @@ package otris
 
 import (
 	"fmt"
-	"github.com/Open-Streaming-Solutions/otris/internal/slog/buffer"
+	"github.com/Totus-Floreo/otris/internal/slog/buffer"
 	"github.com/fatih/color"
 	"log/slog"
 	"strconv"
