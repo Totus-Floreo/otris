@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Uber Technologies, Inc.
+// Copyright (c) 2024 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,11 @@
 
 //go:build go1.21
 
-package otris
+package fx
 
 import (
 	"context"
+	"github.com/Totus-Floreo/otris"
 	"go.uber.org/fx/fxevent"
 	"log/slog"
 	"strconv"
@@ -44,8 +45,8 @@ type SlogLogger struct {
 // NewSlogLogger creates a new SlogLogger instance with the provided slog logger.
 func NewSlogLogger(log *slog.Logger) *SlogLogger {
 	logger := &SlogLogger{Logger: log}
-	logger.UseLogLevel(LevelFx)
-	logger.UseErrorLevel(LevelFxError)
+	logger.UseLogLevel(otris.LevelFx)
+	logger.UseErrorLevel(otris.LevelFxError)
 	return logger
 }
 
