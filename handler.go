@@ -222,11 +222,17 @@ func (h *Handler) WithGroup(name string) slog.Handler {
 func (h *Handler) clone() *Handler {
 	return &Handler{
 		json:              h.json,
+		pretty:            h.pretty,
+		safe:              h.safe,
+		sep:               h.sep,
+		layout:            h.layout,
+		color:             h.color,
 		opts:              h.opts,
 		preformattedAttrs: slices.Clip(h.preformattedAttrs),
 		groupPrefix:       h.groupPrefix,
 		groups:            slices.Clip(h.groups),
 		nOpenGroups:       h.nOpenGroups,
+		buf:               h.buf,
 		w:                 h.w,
 		mu:                h.mu,
 	}
